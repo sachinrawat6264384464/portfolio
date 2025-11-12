@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sachin Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Intro Video -->
+    <div class="introvedio">
+      <video autoplay muted loop playsinline>
+        <source src="./vedios/From2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Main Section -->
+    <section class="main">
+      <div class="color-spread"></div>
+
+      <div class="nav">
+        <img class="logo" src="./images/srlogo.png" alt="logo">
+        <input type="checkbox" id="click">
+        <div class="menu">
+          <ul>
+            <li><a class="home" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+            <button class="con">Contact</button>
+          </ul>
+        </div>
+        <label for="click" class="th">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+      </div>
+
+      <div class="content" id="home">
+        <h1 class="por">Portfolio</h1>
+      </div>
+
+      <div class="imgbox">
+        <div class="card"><img src="./images/html.png" alt=""></div>
+        <div class="card"><img src="./images/react.png" alt=""></div>
+        <div class="card"><img src="./images/python.png" alt=""></div>
+        <div class="card"><img src="./images/css.jpg" alt=""></div>
+      </div>
+    </section>
+
+    <script src="javascript.js"></script>
+  </body>
 </html>
