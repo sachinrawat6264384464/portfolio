@@ -209,7 +209,7 @@ text-align: center;
 }
 @media (max-width: 770px) {
 .content{
-    margin: 34% 0%;}
+    margin: 58% 0%;}
     .por{
         font-size: clamp(3rem, 23vw, 10rem);
         color: transparent;
