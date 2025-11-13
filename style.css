@@ -40,10 +40,11 @@ body {
 }
 .main{
 background-color: rgb(249, 236, 236);
-  position: relative;
+  
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+
+
   z-index: 200;
 
 
@@ -61,20 +62,20 @@ background-color: rgb(249, 236, 236);
   object-position: center; /* keeps center part visible */
   z-index: -1;
   filter: brightness(60%);
+  
 }
 
 .nav{
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 4.5rem;
     background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2%;
-    margin: 0% 10% ;
-    border-bottom: 2px solid rgb(18, 216, 190);
+  
+
     border-radius: 20px;
-    position: static;
+    
  
 }
 .nav img{
@@ -85,31 +86,36 @@ background-color: rgb(249, 236, 236);
     cursor: pointer;
     z-index: 110;
 }
+
 .menu ul{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    border-bottom: black;
     
 }
 .menu ul li a{
 text-decoration: none;
 color: rgb(22, 22, 22);
 font-weight: 600;
-font-size: 1.2rem;
+font-size: 5px;
+
+
 }
 .con{
 display: none;
 }
 .th{
-    display: none;
+  display: none;
   justify-content: space-between;
   width: 30px;
   height: 22px;
   cursor: pointer;
-  z-index: 200;
-gap: 2.2px;    
+  z-index: 4000;
+gap: 2.2px;
+margin-left: 5rem;
 }
 
 #click{
@@ -142,6 +148,7 @@ text-align: center;
   
   -webkit-text-stroke: 1.6px rgba(59, 61, 61, 0.831); /* thoda bold stroke */
   margin-bottom: 6rem;
+  
   opacity: 0.5;
   
 }
@@ -149,59 +156,38 @@ text-align: center;
 
  
 
-.imgbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  padding: 2rem;
-}
-.imgbox img {
-  width: 5rem;
-  height: 5rem;
+
+
+.toggle-btn{
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
   border-radius: 50%;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: all 0.4s ease;
-}
-.imgbox img:hover {
-  transform: scale(1.2);
-  opacity: 1;
-}
-@media (min-width:770px) {
-  .imgbox{
-  gap: 9rem;
-  
-  }
-}
-  
-@media (min-width:1024px) {
-  .imgbox{
-  gap: 10rem;
-  padding: 6rem;
-  
-  }
-  
-}
-@media (min-width:1600px) {
-  .imgbox{
+  cursor: pointer;}
 
-  gap: 14rem;
-  height: 12vh;
+.menu{
+
+  margin-right: 2rem;
 }
+
+
+  
+
+
   
   
-  .menu ul li a{
-    font-size: 1.5rem;
   
-  
-  }}
+  @media (max-width:1450px) {
+    .menu{
+  margin-left: 15rem;
+      
+    }
+  }
 @media (min-width: 1400px) {
-
-  .imgbox{
-  gap: 17rem;
-  height: 10vh;}
   .menu ul{
     gap: 12rem;
     
@@ -211,7 +197,17 @@ text-align: center;
   
   
   }}
-@media (max-width: 430px) {
+  @media (max-width:1030px) {
+  .menu ul li a{
+    font-size: 1.4rem;
+  
+  
+  }
+  .toggle-btn{
+  top: 5rem;
+  }
+}
+@media (max-width: 770px) {
 .content{
     margin: 34% 0%;}
     .por{
@@ -248,20 +244,20 @@ top: -2.2rem;
 height: 100vh
 
 }
-.imgbox{
- gap: 1.4rem;
- flex-direction: row;}
+
  .img{
 
   width: 2rem;
   height: 2rem;}
     .con{
 display: block;
-width: 5rem;
-height: 2rem;
-border: 2px solid rgb(101, 103, 103);
+width: 10rem;
+height: 4rem;
+border: 2px solid rgb(15, 16, 16);
 background-color: transparent;
 border-radius: 10px;
+font-size: 1.2rem;
+  font-weight: 700;
 
 }
 .con:hover{
@@ -286,34 +282,70 @@ border-radius: 10px;
 
     .th{
         display: flex;
+        position: absolute;
+        left: 38rem;
         font-size: 2rem;
-        
         transform: rotate(90deg);
         
+        
     }
+    .menu ul{
+    gap: 6rem;}
+   .menu ul li a{
+    font-size: 2rem;
     
-   
-   
+    
+    
+    }
+   .toggle-btn{
+    top: 5rem;
+    right: 1rem;
+   }
   }
-@media (max-width: 380px) {
-.imgbox{
- gap: 1rem;
-  
-}
-.content{
-padding: 3rem 0rem;
-width: 98vw;
-height: 23vh;
-   
-    text-align: center;
-    
+  @media (max-width:430px) {
+    .th{
+        display: flex;
+        position: absolute;
+        left: 16rem;
+        font-size: 2rem;
+        transform: rotate(90deg);
+        margin-right: 01.1rem;
+        
     }
-    .imgbox{
-    padding: 4rem 0rem;
-    gap: 1.6rem;}
-   img{
-    width: 3.6rem;
-    height: 3.6rem;
-   } 
+  
+    .por{
+    position: absolute;
+    top: 18rem;
+    }}
+   
 
-}
+@media (max-width:320px) {
+  .th{
+      display: flex;
+      position: absolute;
+      left: 12rem;
+      font-size: 2rem;
+      transform: rotate(90deg);
+      margin-right: 01.1rem;
+      
+  }
+  .por{
+  position: absolute;
+    top: 35%;
+  }
+ 
+   
+
+
+
+
+  }
+  /*about sectin start from here*/
+  
+  .about{
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  }
+  
+  
