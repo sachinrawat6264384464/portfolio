@@ -225,7 +225,7 @@ top: -2.2rem;
     .menu ul{
     background-color: rgb(201, 199, 198);
     width: 100%;
-    height: 55vh;
+    height: 70vh;
         position: absolute;
         top: -100%;
         left: 0%;
@@ -290,7 +290,7 @@ font-size: 1.2rem;
         
     }
     .menu ul{
-    gap: 6rem;}
+    gap: 4rem;}
    .menu ul li a{
     font-size: 2rem;
     
@@ -315,7 +315,7 @@ font-size: 1.2rem;
   
     .por{
     position: absolute;
-    top: 18rem;
+    top: 21rem;
     }}
    
 
