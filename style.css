@@ -214,9 +214,7 @@ text-align: center;
         font-size: clamp(3rem, 23vw, 10rem);
         color: transparent;
   -webkit-text-stroke: 1px rgba(119, 122, 122, 0.835); 
-       position: absolute;
-    top: 22rem;
-      left:4vw;
+  
     }
    .main video {
 
@@ -316,7 +314,12 @@ font-size: 1.2rem;
         
     }
   
+    .por{
+         position: absolute;
+    top: 28rem;
+      left:4vw;
     
+    }
    
 
 @media (max-width:320px) {
