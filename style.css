@@ -322,12 +322,7 @@ font-size: 1.2rem;
         
     }
   
-    .por{
-         position: absolute;
-    top: 28rem;
-      left:4vw;
-    
-    }
+  
    
 
 @media (max-width:320px) {
@@ -340,10 +335,7 @@ font-size: 1.2rem;
       margin-right: 01.1rem;
       
   }
-  .por{
-  position: absolute;
-    top: 35%;
-  }
+
  
    
 
