@@ -134,7 +134,7 @@ margin-left: 5rem;
 }
 .po{
 width: 100%;
-height: 40%;
+height: 100%;
 
 display: flex;
 align-items: center;
@@ -358,11 +358,12 @@ font-size: 1.2rem;
   }
   /*about sectin start from here*/
   
-  .about{
+
+  
+  
+  }
+    .about{
   width: 100vw;
   height: 100vh;
   background-color: aqua;
-  }
-  
-  
   }
