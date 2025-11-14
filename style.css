@@ -182,8 +182,85 @@ text-align: center;
   margin-right: 2rem;
 }
 
+.circlegroup{
+width: 50%;
+height: 30%;
+position: absolute;
+top: 50%;
+left: 50%;
 
-  
+display: flex;
+align-items: center;
+justify-content: center;
+ transform: translate(-50%, -50%);
+
+}
+.circle{
+
+width: 6%;
+height: 4vh;
+border-radius: 50%;
+
+background-color: transparent;
+transition: all 1.4s ease;
+}
+
+.circlegroup.spread .circle:nth-child(1) {
+  background-color: aqua;
+  transform: translate(-130px, -100px) scale(0.8); opacity: 0.7;
+}
+.circlegroup.spread .circle:nth-child(2) {
+  background-color: rgb(220, 189, 31);
+  transform: translate(-100px, -170px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(3) {
+  background-color: rgb(187, 118, 208);
+  transform: translate(60px, 170px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(4) {
+  background-color: rgb(71, 238, 10);
+  transform: translate(120px, 70px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(5) {
+  background-color: rgb(207, 12, 126);
+  transform: translate(-100px, 290px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(6) {
+  background-color: rgb(255, 77, 0);
+  transform: translate(40px, -200px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(7) {
+  background-color: rgb(219, 237, 56);
+  transform: translate(200px, -70px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(8) {
+  background-color: rgb(0, 255, 233);
+  transform: translate(-220px, 160px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(9) {
+  background-color: rgb(199, 247, 109) scale(0.8);
+  transform: translate(180px, -180px);
+}
+.circlegroup.spread .circle:nth-child(10) {
+  background-color: rgb(156, 76, 76);
+  transform: translate(-250px, -30px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(11) {
+  background-color: rgb(26, 210, 149);
+  transform: translate(90px, 250px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(12) {
+  background-color: rgb(0, 180, 255);
+  transform: translate(-180px, 260px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(13) {
+  background-color: rgb(255, 120, 0);
+  transform: translate(200px, 200px) scale(0.8);
+}
+.circlegroup.spread .circle:nth-child(14) {
+  background-color: rgb(15, 36, 30);
+  transform: translate(-200px, 150px) scale(0.8); opacity: 0.7;
+}
 
 
   
@@ -216,11 +293,19 @@ text-align: center;
   }
 }
 @media (max-width: 770px) {
+.circlegroup{
+top:37%;
+
+}
+.circle{
+width: 12%;
+height: 3vh;
+}
 .po{
 display: flex;
 align-items: center;
 justify-content: center;
-height: 60%;
+height: 45%;
 
 }
 .content{
@@ -356,14 +441,161 @@ font-size: 1.2rem;
 
 
   }
-  /*about sectin start from here*/
+  
   
 
   
   
-  }
+  }/*about sectin start from here*/
     .about{
   width: 100vw;
-  height: 100vh;
-  background-color: aqua;
+  height: auto;
+  background-color: rgb(249, 236, 236);
+  
+  
+  
   }
+  .box1{
+  max-width: 100%;
+  height: 50%;
+  gap: 2rem;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  }
+  .part1{
+  width: 26rem;
+  background-image: url("./images/sachin.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  border-radius: 50%;
+  
+  }
+   .part2{
+  width: 50rem;
+  height: 40vh;
+
+ 
+  margin-top: 0rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  .part2 h2{
+  font-size: 2rem;
+  color: transparent;
+  
+  -webkit-text-stroke: 1.6px rgba(59, 61, 61, 0.831); /* thoda bold stroke */
+  
+  
+  }
+  .part2 p{
+  font-size: 1.4rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .part2 .move{
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border:2px solid #222;
+  border-radius: 50%;
+    transform: translate(-50%, -50%);  /* center adjust */
+  transition: opacity 0.2s ease;
+opacity: 0;
+    
+    z-index: 6;
+}
+
+  .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;           /* ✅ important: ye enable karega wrapping */
+  gap: 20px;
+  padding: 20px;
+}
+
+.img1 {
+  flex: 1 1 120px;           /* ye allow karta hai items ko wrap hone */
+  display: flex;
+  justify-content: center;
+}
+
+.img1 img {
+  width:14rem;
+  height: 14rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover par zoom aur glow */
+.img1 img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px cyan, 0 0 40px cyan;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .box1 {
+    flex-direction: column;    /* mobile me bhi row me rahe, wrap ke sath */
+  }
+ 
+
+@media (max-width: 500px) {
+  .box1{
+    flex-direction: column; /* ✅ very small screen par column me aa jayegi */
+  }
+  .img1 img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+ .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;           /* ✅ important: ye enable karega wrapping */
+  gap: 10rem;
+  padding: 20px;
+}
+
+.img1 {
+  flex: 1 1 120px;           /* ye allow karta hai items ko wrap hone */
+  display: flex;
+  justify-content: center;
+}
+
+.img1 img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover par zoom aur glow */
+.img1 img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px cyan, 0 0 40px cyan;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .box2 {
+    flex-direction: row;    /* mobile me bhi row me rahe, wrap ke sath */
+  }
+
+}
+
+@media (max-width: 480px) {
+  .box2 {
+    flex-direction: column; /* ✅ very small screen par column me aa jayegi */
+  }
+}
+}

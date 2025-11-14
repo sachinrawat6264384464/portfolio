@@ -32,4 +32,18 @@ else{
  mode = false;  }
 });
 
+const circleGroup = document.querySelector(".circlegroup");
+
+const circles = document.querySelectorAll(".circle");
+circleGroup.addEventListener("mouseenter", () => {
+  circleGroup.classList.add("spread");
+
+});
+circleGroup.addEventListener("mouseleave", () => {
+  circleGroup.classList.remove("spread");
+});
+
+
+           // hide when leaving the div
+
 
