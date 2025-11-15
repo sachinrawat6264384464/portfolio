@@ -37,8 +37,8 @@ card31.style.boxShadow='4px 3px 10px rgba(248, 245, 245, 1)'
  contact1.style.backgroundColor = '#121212';
  probig.style.backgroundColor = '#121212';
  pro.style.backgroundColor = '#121212';
-h111.style.color='white';
-p2.style.color='white';
+h111.style.color='rgb(35, 209, 191)';
+p2.style.color='rgb(35, 209, 191)';
 
  about.style.color = 'white';
  h2.style.color ='rgb(35, 209, 191)';
