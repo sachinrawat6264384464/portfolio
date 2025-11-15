@@ -272,11 +272,15 @@ justify-content: center;
 height: 45vh;
 
 }
+.po h2{
+font-size: 1.4rem;
+
+}
 .content{
     position: relative;
     top:10rem ;}
     .por{
-        font-size: clamp(3rem, 23vw, 10rem);
+        font-size: clamp(2rem, 21vw, 9rem);
         color: transparent;
   -webkit-text-stroke: 1px rgba(119, 122, 122, 0.835); 
   
