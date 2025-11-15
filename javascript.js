@@ -2,7 +2,7 @@ setTimeout(()=>{
  document.querySelector('.introvedio').style.display='none';
  document.querySelector('.main').style.opacity='1';
 
-},1000)
+},7000)
 const toggleBtn = document.getElementById('toggle');
 const body = document.querySelector('#main1');
 const port = document.querySelector('.por');
@@ -89,5 +89,5 @@ circleGroup.addEventListener("mouseleave", () => {
 
 
            // hide when leaving the div
-
+//form summition
 
